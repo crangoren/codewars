@@ -1,6 +1,16 @@
 package solutions;
 
 public class cw_6kyu {
+    public static void main(String[] args) {
+
+        countBits(1234);
+
+    }
+
+
+
+
+
     /*You probably know the "like" system from Facebook and other pages. People can "like" blog posts, pictures or other items. We want to create the text that should be displayed next to such an item.
 
     Implement the function likes which takes an array containing the names of people that like an item. It must return the display text as shown in the examples:
@@ -28,4 +38,14 @@ public class cw_6kyu {
 
         return r;
     }
+
+    public static int countBits(int n){
+        String bin = Integer.toBinaryString(n);
+        int counter = 0;
+        for (int i = 0; i < bin.length(); i++) {
+            counter += Character.getNumericValue(bin.charAt(i));
+        }
+        return counter;
+    }
+}
 }
