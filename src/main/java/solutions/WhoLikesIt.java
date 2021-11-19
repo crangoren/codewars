@@ -1,6 +1,11 @@
 package solutions;
 
-public class cw_6kyu {
+public class WhoLikesIt {
+    public static void main(String[] args) {
+
+        countBits(1234);
+
+    }
 
     /*You probably know the "like" system from Facebook and other pages. People can "like" blog posts, pictures or other items. We want to create the text that should be displayed next to such an item.
 
@@ -30,10 +35,6 @@ public class cw_6kyu {
         return r;
     }
 
-
-    /*Write a function that takes an integer as input, and returns the number of bits that are equal to one in the binary representation of that number. You can guarantee that input is non-negative.
-
-            Example: The binary representation of 1234 is 10011010010, so the function should return 5 in this case*/
     public static int countBits(int n){
         String bin = Integer.toBinaryString(n);
         int counter = 0;
@@ -42,5 +43,5 @@ public class cw_6kyu {
         }
         return counter;
     }
-}
 
+}
